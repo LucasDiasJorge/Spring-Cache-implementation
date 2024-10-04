@@ -15,3 +15,6 @@ Este projeto demonstra como implementar caching em uma aplicação Spring Boot. 
 - O service PiService calcula do valor de Pi e salva o valor encontrado após a entrega da Request.
 - Com a anotação `@Cacheable`, os das casas decimais de pi são armazenadas em cache após a primeira chamada, permitindo que chamadas subsequentes sejam atendidas rapidamente sem a latência inicial.
 - A classe `CacheApplication` habilita o caching por meio da anotação `@EnableCaching`.
+
+_[Caching documentation](https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/html/boot-features-caching.html)
+_[Caffeine documentation](https://github.com/ben-manes/caffeine)
