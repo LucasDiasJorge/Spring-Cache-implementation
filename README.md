@@ -22,4 +22,4 @@ _[Caffeine documentation](https://github.com/ben-manes/caffeine)_
 
 ### Curiosidades
 
-- Scheduled é ignorado em Run time. Para 
+- Scheduled é ignorado em Runtime. 
