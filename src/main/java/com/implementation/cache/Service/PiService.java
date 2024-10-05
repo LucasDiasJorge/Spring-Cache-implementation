@@ -1,6 +1,7 @@
 package com.implementation.cache.Service;
 
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
@@ -32,6 +33,12 @@ public class PiService {
 
         pi = C.divide(pi, mc);
         return pi;
+    }
+
+    @Scheduled(fixedRate = 1000)
+    public void printPi(){
+        // @Cacheable self-invocation (in effect, a method within the target object calling another method of the target object). The cache annotation will be ignored at runtime
+        System.out.println("Pi: " + computePi(1500));
     }
 
 

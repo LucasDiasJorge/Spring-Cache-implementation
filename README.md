@@ -17,4 +17,9 @@ Este projeto demonstra como implementar caching em uma aplicação Spring Boot. 
 - A classe `CacheApplication` habilita o caching por meio da anotação `@EnableCaching`.
 
 _[Caching documentation](https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/html/boot-features-caching.html)_
+
 _[Caffeine documentation](https://github.com/ben-manes/caffeine)_
+
+### Curiosidades
+
+- Scheduled é ignorado em Run time. Para 
